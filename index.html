@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Apparel - Verification System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sistem Efek Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Konten Utama Website (Card) -->
+    <div id="mainCard" class="card">
+        
+        <!-- Bagian Logo SVG Kreatif dan Nama Brand -->
+        <div class="brand-container">
+            <img class="brand-logo" src="logo.svg" alt="Logo Brand">
+
+            <div class="brand-name">WEAR YOUR IDENTITY</div>
+        </div>
+        
+        <!-- Status Keaslian (Warna Hijau Asal Dipertahankan) -->
+        <div class="status-box">
+            ✔ AUTHENTICITY VERIFIED
+        </div>
+
+        <!-- Deskripsi Utama (Teks Putih) -->
+        <p class="thank-you">
+            Terima kasih telah mempercayai dan menggunakan
+produk orisinil dari <span class="company-highlight">YR.ID OFFICIAL</span>
+        </p>
+
+        <!-- Container Data Informasi Produk -->
+        <div class="meta-container">
+            <div class="meta-item">
+                <span class="meta-label">ID ARTIKEL</span>
+                <span class="meta-val">YR-JERSEY-001</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">NOMOR BATCH</span>
+                <span class="meta-val">001/026</span>
+            </div>
+        </div>
+
+        <!-- Tombol Tautan Interaktif (Teks Hitam di Atas Blok Putih) -->
+        <a href="https://instagram.com" target="_blank" class="btn-link">IKUTI RILISAN BERIKUTNYA</a>
+
+        <!-- Catatan Kaki (Teks Abu-abu) -->
+        <div class="footer-note">
+            ALL RIGHTS RESERVED // YR.ID OFFICIAL &copy; 2026
+        </div>
+    </div>
+
+    <!-- Script JavaScript Pengendali Efek Memuat Halaman -->
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loader');
+                const mainCard = document.getElementById('mainCard');
+                
+                if (loader && mainCard) {
+                    loader.style.opacity = '0';
+                    loader.style.visibility = 'hidden';
+                    mainCard.classList.add('show');
+                }
+            }, 2000); // Durasi memuat simulasi selama 2 detik
+        });
+    </script>
+</body>
+</html>
